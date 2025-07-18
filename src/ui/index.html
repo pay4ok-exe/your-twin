@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Twin - AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Your Twin</span>
+            </div>
+            <div class="status" id="status">
+                <span class="status-dot"></span>
+                <span class="status-text">В ожидании</span>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="listening-indicator" id="listeningIndicator">
+                <div class="pulse-ring"></div>
+                <div class="microphone-icon">🎤</div>
+            </div>
+            
+            <div class="command-display" id="commandDisplay">
+                <p class="command-text" id="commandText">Нажмите Ctrl+Shift+V для активации</p>
+                <p class="command-hint" id="commandHint">Скажите: "Открой проект imperium" или "Объясни код"</p>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="toggleBtn" title="Переключить прослушивание">
+                <span class="btn-icon">🎤</span>
+                <span class="btn-text">Слушать</span>
+            </button>
+            
+            <button class="control-btn" id="settingsBtn" title="Настройки">
+                <span class="btn-icon">⚙️</span>
+                <span class="btn-text">Настройки</span>
+            </button>
+            
+            <button class="control-btn" id="closeBtn" title="Скрыть">
+                <span class="btn-icon">✖️</span>
+                <span class="btn-text">Скрыть</span>
+            </button>
+        </div>
+        
+        <div class="footer">
+            <div class="hotkeys">
+                <span class="hotkey">Ctrl+Shift+V</span> - Голос
+                <span class="hotkey">Ctrl+Shift+C</span> - Cursor
+                <span class="hotkey">Ctrl+Shift+A</span> - Claude
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
